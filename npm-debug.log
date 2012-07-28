@@ -1,0 +1,57 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.1.45
+3 info using node@v0.8.4
+4 verbose config file /home/foxyboy/.npmrc
+5 verbose config file /usr/local/etc/npmrc
+6 verbose config file /usr/local/lib/node_modules/npm/npmrc
+7 verbose read json /home/foxyboy/Desktop/c505/node/express3html5/package.json
+8 warn package.json express3temblor@0.0.1 No README.md file found!
+9 verbose readDependencies using package.json deps
+10 verbose install where, deps [ '/home/foxyboy/Desktop/c505/node/express3html5',
+10 verbose install   [ 'express', 'htmlfive' ] ]
+11 verbose from cache /home/foxyboy/Desktop/c505/node/express3html5/package.json
+12 info preinstall express3temblor@0.0.1
+13 verbose read json /home/foxyboy/Desktop/c505/node/express3html5/node_modules/express/package.json
+14 verbose read json /home/foxyboy/Desktop/c505/node/express3html5/node_modules/html/package.json
+15 verbose from cache /home/foxyboy/Desktop/c505/node/express3html5/package.json
+16 verbose readDependencies using package.json deps
+17 verbose from cache /home/foxyboy/Desktop/c505/node/express3html5/node_modules/express/package.json
+18 verbose read json /home/foxyboy/Desktop/c505/node/express3html5/node_modules/.bin/package.json
+19 verbose from cache /home/foxyboy/Desktop/c505/node/express3html5/node_modules/html/package.json
+20 verbose already installed skipping express@>= 3 /home/foxyboy/Desktop/c505/node/express3html5
+21 verbose cache add [ 'htmlfive@', null ]
+22 silly cache add name=undefined spec="htmlfive@" args=["htmlfive@",null]
+23 verbose parsed url { pathname: 'htmlfive@', path: 'htmlfive@', href: 'htmlfive@' }
+24 silly cache add name="htmlfive" spec="" args=["htmlfive",""]
+25 verbose parsed url { href: '' }
+26 verbose addNamed [ 'htmlfive', '' ]
+27 verbose addNamed [ null, '' ]
+28 silly lockFile cd0c9e65-htmlfive htmlfive@
+29 verbose lock htmlfive@ /home/foxyboy/.npm/cd0c9e65-htmlfive.lock
+30 silly addNameRange { name: 'htmlfive', range: '', hasData: false }
+31 verbose url raw htmlfive
+32 verbose url resolving [ 'https://registry.npmjs.org/', './htmlfive' ]
+33 verbose url resolved https://registry.npmjs.org/htmlfive
+34 info retry registry request attempt 1 at 18:58:21
+35 http GET https://registry.npmjs.org/htmlfive
+36 http 404 https://registry.npmjs.org/htmlfive
+37 silly registry.get cb [ 404,
+37 silly registry.get   { server: 'CouchDB/1.2.0 (Erlang OTP/R15B)',
+37 silly registry.get     date: 'Fri, 27 Jul 2012 01:58:22 GMT',
+37 silly registry.get     'content-type': 'application/json',
+37 silly registry.get     'content-length': '52',
+37 silly registry.get     'cache-control': 'must-revalidate' } ]
+38 silly lockFile cd0c9e65-htmlfive htmlfive@
+39 error 404 'htmlfive' is not in the npm registry.
+39 error 404 You should bug the author to publish it
+39 error 404
+39 error 404 Note that you can also install from a
+39 error 404 tarball, folder, or http url, or git url.
+40 error System Linux 3.2.0-27-generic
+41 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+42 error cwd /home/foxyboy/Desktop/c505/node/express3html5
+43 error node -v v0.8.4
+44 error npm -v 1.1.45
+45 error code E404
+46 verbose exit [ 1, true ]
