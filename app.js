@@ -9,7 +9,7 @@ var express = require('express')
   , path = require('path');
 
 var app = express();
-app.engine('html', require('htmlfive').__express)
+app.engine('html', require('webfiller').__express)
 app.configure(function(){
   app.set('port', process.env.PORT || 3002);
   app.set('views', __dirname + '/views');
@@ -28,7 +28,7 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-require('htmlfive').addRoutes({}, app)
+require('webfiller').addRoutes({}, app)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

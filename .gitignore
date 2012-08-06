@@ -1,5 +1,2 @@
 /node_modules
-/cache
-.project
-.settings
-.DS_Store
+/public/webfiller
