@@ -1,22 +1,16 @@
 // index_2.js
-;(function () {
-
-	var isNode = typeof module == 'object' && !!module.exports
-	if (isNode) WF = require('webfiller').WF
+;(function (isNode, WF) {
 
 	// declare some custom dual-side JavaScript
 	WF.functions.myfunction = function myfunction(params) {
 
-		// add red class to the tag
-		var t = this.getTagClone()
-		if (t.classes.indexOf('red') == -1) t.classes.push('red')
-		this.printTag(t)
-
-		// output present element content
+		// output available element content
 		this.print(this.content)
+		// indicate that content has already been printed
+		this.suppressContent()
 
-		// append out own stuff
+		// append some cool text
 		this.print(isNode ? 'on the server' : 'in the browser')
-		this.content = null
 	}
-})()
+})(typeof module == 'object' && !!module.exports, // isNode
+typeof module == 'object' && !!module.exports ? require('webfiller').WF : WF) // WF
