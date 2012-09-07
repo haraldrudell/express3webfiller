@@ -9,13 +9,13 @@ function getHandler(defaults, view) {
 			title: 'Webfiller on Express 3',
 			bindings: {
 				'': { // insert at beginning of html document
-					fragment: 'header', // the header fragment
+					fragment: ['header'], // the header fragment
 				},
 				h1: {
 					append: 'title',
 				},
 				'#list': {
-					fragment: 'listentry',
+					fragment: ['listentry'],
 				},
 			}
 		})
@@ -34,7 +34,7 @@ exports.publicFragments = {
 	listentry: {	// fragment name listentry, in './listentry.html'
 		li: [	// for all li elements
 			{
-				addClass: 'red'	// add the red class
+				addClass: ['red']	// add the red class
 			},
 			{
 				myfunction: 5,	// execute the custom 'myfunction'
